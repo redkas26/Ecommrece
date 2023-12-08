@@ -10,6 +10,7 @@ import React from 'react'
 import AppNavbar from './components/Navbar';
 import Products from './components/Products'
 import Cart from './components/Cart';
+import ProductDetails from './components/Product';
 
 function App()  {
   return (
@@ -17,6 +18,7 @@ function App()  {
       <AppNavbar />
       <Routes>
         <Route path="/" element={<Products />} />
+        <Route path='/:id' element={<Products />}></Route>
         <Route path='cart' element={<Cart />} />
       </Routes>
       
